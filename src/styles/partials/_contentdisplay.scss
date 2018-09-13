@@ -11,9 +11,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20px
+	overflow: hidden;
+	height: 300px;
+	position: relative;
 	img {
-		height: 350px;
-		width: 350px;
+		position: absolute;
+		bottom: -50px;
+		height: auto;
+		width: 100%;
 	}
 }
 

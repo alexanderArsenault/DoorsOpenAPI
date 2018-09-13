@@ -146,13 +146,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   align-items: center;
   margin-top: 20px;
   overflow: hidden;
-  height: 300px;
+  height: 450px;
   position: relative; }
   .image-center img {
     position: absolute;
     bottom: -50px;
     height: auto;
-    width: 100%; }
+    width: 100%;
+    max-width: 700px; }
 
 .aside {
   width: 30%; }

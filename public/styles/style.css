@@ -145,8 +145,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   justify-content: center;
   align-items: center; }
   .image-center img {
-    height: auto;
-    width: auto; }
+    height: 350px;
+    width: 350px; }
 
 .aside {
   width: 30%; }

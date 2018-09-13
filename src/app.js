@@ -202,8 +202,6 @@ var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var labelIndex = 0;
 
 function markerTime(buildingName,address,description,vexp,progdes,architect,buildDate,satStart,satEnd,sunStart,sunEnd,lat,lon,website,image,instagram,facebook,flickr,youtube,twitter) {
-	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-
 	var marker = new google.maps.Marker({
 		label: labels[labelIndex++ % labels.length],
 		position: {lat: +lat, lng: +lon},
@@ -231,7 +229,6 @@ function markerTime(buildingName,address,description,vexp,progdes,architect,buil
 		data_flickr: flickr,
 		data_youtube: youtube,
 		data_twitter:twitter,
-    	icon: iconBase + 'parking_lot_maps.png',
 	})
 
 
@@ -275,7 +272,6 @@ function markerTime(buildingName,address,description,vexp,progdes,architect,buil
 			$('.saturdayHours').html("Saturday: Closed");
 		}
 
-		console.log(image);
 		if (image !== ''){
 		$('#image').attr('src', image);
 

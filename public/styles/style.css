@@ -139,6 +139,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto; }
 
+.image-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .image-center img {
+    height: auto;
+    width: auto; }
+
 .aside {
   width: 30%; }
 

@@ -67,6 +67,7 @@ doorsOpen.displayLocation = function (rawdata) {
 		var twitter = location.dot_Links.dot_twitter;
 
 		if (lat !== '' && lon !== '') {
+
 			markerTime(buildingName, address, description, vexp, progdes, architect, buildDate, satStart, satEnd, sunStart, sunEnd, lat, lon, website, image, instagram, facebook, flickr, youtube, twitter);
 		}
 
@@ -169,7 +170,7 @@ function clearOverlays() {
 var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var labelIndex = 0;
 
-function markerTime(buildingName, image, address, description, vexp, progdes, architect, buildDate, satStart, satEnd, sunStart, sunEnd, lat, lon, website, instagram, facebook, flickr, youtube, twitter) {
+function markerTime(buildingName, address, description, vexp, progdes, architect, buildDate, satStart, satEnd, sunStart, sunEnd, lat, lon, website, image, instagram, facebook, flickr, youtube, twitter) {
 	var _ref;
 
 	var marker = new google.maps.Marker((_ref = {
@@ -221,9 +222,8 @@ function markerTime(buildingName, image, address, description, vexp, progdes, ar
 			$('.saturdayHours').html("Saturday: Closed");
 		}
 
-		console.log(image);
 		if (image !== '') {
-			$('#image').attr('src', image);
+			$('#image').attr('src', 'www.toronto.ca/ext/edc/doors_open/buildings/' + image);
 		}
 
 		if (sunStart !== "") {

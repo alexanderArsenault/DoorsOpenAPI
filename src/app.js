@@ -202,12 +202,13 @@ var labelIndex = 0;
 
 function markerTime(buildingName,image,address,description,vexp,progdes,architect,buildDate,satStart,satEnd,sunStart,sunEnd,lat,lon,website,instagram,facebook,flickr,youtube,twitter) {
 	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-	
+
 	var marker = new google.maps.Marker({
+
+    icon: iconBase + 'parking_lot_maps.png'
 		label: labels[labelIndex++ % labels.length],
-		position: myLatLng,
+		position: {lat: +lat, lng: +lon},
 		map: map,
-		icon: iconBase + 'parking_lot_maps.png'
 		data_buildingName: buildingName,
 		data_address: address,
 		data_description: description,

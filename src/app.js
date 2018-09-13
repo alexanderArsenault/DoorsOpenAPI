@@ -273,7 +273,7 @@ function markerTime(buildingName,address,description,vexp,progdes,architect,buil
 		}
 
 		if (image !== ''){
-		$('#image').attr('src', image);
+		$('#image').attr('src', 'www.toronto.ca/ext/edc/doors_open/buildings/' + image);
 
 		}
 

@@ -204,8 +204,7 @@ function markerTime(buildingName,image,address,description,vexp,progdes,architec
 	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
 	var marker = new google.maps.Marker({
-
-    icon: iconBase + 'parking_lot_maps.png'
+    	icon: iconBase + 'parking_lot_maps.png',
 		label: labels[labelIndex++ % labels.length],
 		position: {lat: +lat, lng: +lon},
 		map: map,

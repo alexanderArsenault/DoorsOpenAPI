@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doors Open</title>
+	<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+	<link rel="stylesheet" href="public/styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="assets/ICON.jpg">
+
+</head>
+<body>
+
+<header>
+	<div class="hero">
+		<h1>Doors Open Toronto</h1>
+		<h3> May 27 & 28 2017</h3>
+		<p>
+			The 18th annual edition is scheduled for May 27 to 28, 2017, and offers an opportunity to see inside more than 150 architecturally, historically, culturally and socially significant buildings across the city.
+		</p>
+
+
+		<form>
+			<select name="locationType" id="locationType">
+				<option value="design">Select a Building Type</option>
+				<option value="design">Architecture & Design</option>
+				<option value="finance">Financial Institution</option>
+				<option value="arts">Arts & Cultural Centre</option>
+				<option value="museum">Museum Heritage & Historic Site</option>
+				<option value="gov">Government / City-owned Building</option>
+				<option value="library">Educational Institute Library or Archives</option>
+				<option value="media">Media / Broadcaster Facility</option>
+				<option value="tourism">Hospitality / Tourism Venue</option>
+				<option value="medical">Medical & Scientific Research Facility</option>
+				<option value="faith">Faith & Worship Centre</option>
+				<option value="community">Community Centre / Agency</option>
+				<option value="sports">Sports & Recreation Facility</option>
+			</select>
+		</form>
+	</div>
+
+</header>
+<main>
+<div class="wrapper">
+		<div id="map"></div>
+
+	<div id="card" class="body__container">
+		<div class="card">
+			<div class="headerbox">
+				<div class="headline">
+					<div class="mainheader">
+						<h1 class="buildingName"></h1>
+						<div id="mapbutton" class="toplink">
+							<i class="fa fa-chevron-up"></i>
+							<p> Map </p>
+						</div>
+					</div>
+					<div class="subheader">
+						<div class="address"></div>
+						<div class="buildDate"></div>
+					</div>
+				</div>
+				<div class="architectbox"></div>
+			</div>
+			<div class="contentbox"> 
+				<div class="descriptionBox">
+					<div class="fullDescription"></div>
+					<div class="programGuide"></div>
+					<div class="visitorExperience"></div>
+				</div>
+				<div class="aside">				
+					<div class="saturdayHours"></div>
+					<div class="sundayHours"></div>	
+
+					<div class="linkcontainer">
+						<ul>
+							<li class="website"></li>
+							<li class="instagram"></li>
+							<li class="facebook"></li>
+							<li class="flickr"></li>
+							<li class="youtube"></li>
+							<li class="twitter"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs2tw-EXW2d9qBqB5Twg0RXiB673de_vk&callback=initMap"
+ async defer></script>
+<script src="src/app.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <form class="locationTypeList">   ALT METHOD
+	<ul>
+		<li><input type="checkbox" id="1" value = "Architecture & Design">
+		<label for="1">Architecture & Design</label></li>
+		
+		<li><input type="checkbox" id="2" value = "Financial Institution">
+		<label for="2"></label>Financial Institution</li>
+		
+		<li><input type="checkbox" id="3" value = "Arts & Cultural Centre">
+		<label for="3"></label>Arts & Cultural Centre</li>
+		
+		<li><input type="checkbox" id="4" value = "Museum Heritage & Historic Site">
+		<label for="4">Museum Heritage & Historic Site</label></li>
+		
+		<li><input type="checkbox" id="5" value = "Government / City-owned Building">
+		<label for="5">Government / City-owned Building</label></li>
+		
+		<li><input type="checkbox" id="6" value = "Educational Institute Library or Archives">
+		<label for="6">Educational Institute Library or Archives</label></li>
+		
+		<li><input type="checkbox" id="7" value = "Media / Broadcaster Facility">
+		<label for="7">Media / Broadcaster Facility</label></li>
+		
+		<li><input type="checkbox" id="8" value = "Hospitality / Tourism Venue">
+		<label for="8">Hospitality / Tourism Venue</label></li>
+		
+		<li><input type="checkbox" id="9" value = "Medical & Scientific Research Facility">
+		<label for="9">Medical & Scientific Research Facility</label></li>
+		
+		<li><input type="checkbox" id="10" value = "Faith & Worship Centre">
+		<label for="10">Faith & Worship Centre</label></li>
+		
+		<li><input type="checkbox" id="11" value = "Community Centre / Agency">
+		<label for="11">Community Centre / Agency</label></li>
+		
+		<li><input type="checkbox" id="12" value = "Sports & Recreation Facility">
+		<label for="12">Sports & Recreation Facility</label></li>
+	</ul>
+		<button type="submit" id="submit"> Submit </button>
+
+</form> -->

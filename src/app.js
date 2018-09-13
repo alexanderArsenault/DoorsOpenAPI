@@ -65,6 +65,7 @@ doorsOpen.displayLocation = function(rawdata) {
 
 
 			if (lat !== '' && lon !== ''){
+
 			markerTime(
 				buildingName,
 				address,
@@ -200,11 +201,10 @@ function clearOverlays() {
 var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var labelIndex = 0;
 
-function markerTime(buildingName,image,address,description,vexp,progdes,architect,buildDate,satStart,satEnd,sunStart,sunEnd,lat,lon,website,instagram,facebook,flickr,youtube,twitter) {
+function markerTime(buildingName,address,description,vexp,progdes,architect,buildDate,satStart,satEnd,sunStart,sunEnd,lat,lon,website,image,instagram,facebook,flickr,youtube,twitter) {
 	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
 	var marker = new google.maps.Marker({
-    	icon: iconBase + 'parking_lot_maps.png',
 		label: labels[labelIndex++ % labels.length],
 		position: {lat: +lat, lng: +lon},
 		map: map,
@@ -231,6 +231,7 @@ function markerTime(buildingName,image,address,description,vexp,progdes,architec
 		data_flickr: flickr,
 		data_youtube: youtube,
 		data_twitter:twitter,
+    	icon: iconBase + 'parking_lot_maps.png',
 	})
 
 
